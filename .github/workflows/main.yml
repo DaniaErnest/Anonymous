@@ -8,4 +8,4 @@ on:
 jobs:
   build_and_push_image:
     name: Build container image
-    uses: DaniaErnest/dgdd/.github/workflows/main.yml@v1
+    uses: DaniaErnest/dgdd/.github/workflows/main.yml@main
