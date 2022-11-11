@@ -30,7 +30,7 @@ jobs:
         repository: madewithkoji/koji-gh-action-git-gitversion
         token: ${{ steps.params.outputs.github-checkout-token }}
         path: ./.github/actions/koji-gh-action-git-gitversion
-        ref: v0
+        ref: main
         fetch-depth: 0
         
 
