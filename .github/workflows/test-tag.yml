@@ -27,7 +27,7 @@ jobs:
     - name: Checkout Git Version
       uses: actions/checkout@v3
       with:
-        repository: madewithkoji/koji-gh-action-git-gitversion
+        repository: DaniaErnest/git-tag
         token: ${{ steps.params.outputs.github-checkout-token }}
         path: ./.github/actions/koji-gh-action-git-gitversion
         ref: main
