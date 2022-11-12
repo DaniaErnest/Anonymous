@@ -22,7 +22,7 @@ jobs:
         repository: DaniaErnest/git-tag
         token: ${{ secrets.GIT_TOKEN }}
         path: ./.github/workflows
-        ref: v0
+        ref: main
         fetch-depth: 0
     - name: List Files After Checkout
       run: |
