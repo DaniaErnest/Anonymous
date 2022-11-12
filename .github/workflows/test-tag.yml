@@ -37,7 +37,9 @@ jobs:
           apt git --version
           
     - name: git initialize
-    - run: git init
+    - run: |
+       git init
+       git status
     # Determining Version
     - name: Determine Version
       id: my-tag
