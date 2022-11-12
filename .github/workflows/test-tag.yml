@@ -5,18 +5,7 @@ on:
 jobs:
   build-tag:
     runs-on: ubuntu-latest
-    steps:
-    
-    - name: install git
-      run: |
-         git init
-         git remote add origin git@github.com:DaniaErnest/Anonymous.git
-    - name: remote
-      run: |
-         git remote -v
-         git checkout -b main
-         git branch --show-current
-    
+    steps:  
     - name: List Files
       run: |
           pwd
@@ -40,6 +29,16 @@ jobs:
           pwd
           ls -la
           ls -a
+    - name: install git
+      run: |
+         git init
+         git remote add origin git@github.com:DaniaErnest/Anonymous.git
+         
+    - name: remote
+      run: |
+         git remote -v
+         git checkout -b main
+         git branch --show-current
     - name: Configure git to trust the workspace despite the different owner
       run:
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
