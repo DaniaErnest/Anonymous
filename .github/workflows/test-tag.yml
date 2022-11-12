@@ -7,6 +7,14 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     
+    - name: install git
+      run: |
+          sudo apt-get install git
+          sudo apt-get upgrade git
+          git init
+          apt git --version
+          ls -a
+    
     - name: List Files
       run: |
           pwd
@@ -30,13 +38,6 @@ jobs:
       run: |
           pwd
           ls -la
-          ls -a
-    - name: install git
-      run: |
-          sudo apt-get install git
-          sudo apt-get upgrade git
-          git init
-          apt git --version
           ls -a
     - name: Configure git to trust the workspace despite the different owner
       run:
