@@ -29,8 +29,6 @@ jobs:
     - name: Determine Version
       id: my-tag
       uses: ./.github/actions/koji-gh-action-git-gitversion
-      with:
-       token: ${{secrets.GIT_TOKEN }} }}
 
 
 
