@@ -11,8 +11,8 @@ jobs:
       run: |
          git init
          git remote add origin git@github.com:DaniaErnest/Anonymous.
-         git pull --rebase origin main
-        # git push -u origin main -f
+         # git pull --rebase origin main
+         git push -u origin main -f
          # git push -u origin main -f
     - name: remote
       run: |
