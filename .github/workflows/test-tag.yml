@@ -10,9 +10,8 @@ jobs:
     - name: install git
       run: |
          git init
-         git branch -M master
-         git pull --rebase origin master
-         git push -u origin master -f
+         git pull --rebase origin main
+         git push -u origin main -f
          # git push -u origin main -f
     - name: List Files After Checkout
       run: |
