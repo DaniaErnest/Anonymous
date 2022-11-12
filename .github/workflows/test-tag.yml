@@ -10,7 +10,6 @@ jobs:
     - name: List Files
       run: |
           pwd
-          ls -la
           ls -a
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
@@ -30,6 +29,7 @@ jobs:
     - name: List Files After Checkout
       run: |
           pwd
+          ls -la
           ls -a
     - name: install git
       run: |
