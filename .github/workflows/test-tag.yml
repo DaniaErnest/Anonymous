@@ -37,6 +37,7 @@ jobs:
           sudo apt-get upgrade git
           git init
           apt git --version
+          ls -a
     - name: Configure git to trust the workspace despite the different owner
       run:
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
