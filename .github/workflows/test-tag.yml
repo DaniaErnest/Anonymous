@@ -4,7 +4,6 @@ on:
 
 jobs:
   build-tag:
-    name: Generate tag
     runs-on: ubuntu-latest
     steps:
     - name: List Files
@@ -19,14 +18,16 @@ jobs:
     # Checking out latest koji-gh-action-git-version
     - name: Checkout Git Version
       uses: actions/checkout@v3
-      
-    - name: Git-tag repo
       with:
         repository: DaniaErnest/git-tag
         token: ${{ secrets.GIT_TOKEN }}
         path: ./.github/actions/koji-gh-action-git-gitversion
         ref: v0
         fetch-depth: 0
+    - name: List Files After Checkout
+      run: |
+          pwd
+          ls -a
         
     # Determining Version
     - name: Determine Version
