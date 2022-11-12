@@ -31,11 +31,7 @@ jobs:
           pwd
           ls -a
     - name: install git
-      run: |
-          sudo apt-get install git
-          sudo apt-get upgrade git
-          apt git --version
-        
+    - run: git init
     # Determining Version
     - name: Determine Version
       id: my-tag
