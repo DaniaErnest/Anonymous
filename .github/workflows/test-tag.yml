@@ -13,12 +13,9 @@ jobs:
          git remote -v
         # git push -u origin main -f
          # git push -u origin main -f
-    - name: List Files After Checkout
+    - name: remote
       run: |
          git remote -v
-          pwd
-          ls -la
-          ls -a
     
     - name: List Files
       run: |
