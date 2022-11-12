@@ -35,11 +35,11 @@ jobs:
         
 
     # Determining Version
-    - name: Determine Version
-      id: my-tag
-      uses: ./.github/actions/koji-gh-action-git-gitversion
-      with:
-       token: ${{ steps.params.outputs.github-checkout-token }}
+    #- name: Determine Version
+     # id: my-tag
+      #uses: ./.github/actions/koji-gh-action-git-gitversion
+      #with:
+       #token: ${{ steps.params.outputs.github-checkout-token }}
 
     # Debugging Output SemVer
     - run: echo "v${{ steps.gitversion.outputs.semVer }}"
