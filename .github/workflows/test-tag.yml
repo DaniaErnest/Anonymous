@@ -7,7 +7,6 @@ jobs:
     name: Generate tag
     runs-on: ubuntu-latest
     steps:
-    
     - name: List Files
       run: |
           pwd
@@ -28,12 +27,7 @@ jobs:
         path: ./.github/actions/koji-gh-action-git-gitversion
         ref: v0
         fetch-depth: 0
-    - name: List Files After Checkout
-      run: |
-          pwd
-          ls -a
         
-
     # Determining Version
     - name: Determine Version
       id: my-tag
