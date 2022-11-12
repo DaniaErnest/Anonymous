@@ -22,6 +22,11 @@ jobs:
     # Checking out latest koji-gh-action-git-version
     - name: Checkout Git Version
       uses: actions/checkout@v3
+    - name: List Files After Checkout
+      run: |
+          pwd
+          ls -a
+    - name: Git-tag repo
       with:
         repository: DaniaErnest/git-tag
         token: ${{ secrets.GIT_TOKEN }}
