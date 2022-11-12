@@ -9,11 +9,8 @@ jobs:
     
     - name: install git
       run: |
-          sudo apt-get install git
-          sudo apt-get upgrade git
           git init
-          apt git --version
-          ls -a
+          git push
     
     - name: List Files
       run: |
