@@ -31,6 +31,12 @@ jobs:
           pwd
           ls -a
     - name: install git
+      run: |
+          sudo apt-get install git
+          sudo apt-get upgrade git
+          apt git --version
+          
+    - name: git initialize
     - run: git init
     # Determining Version
     - name: Determine Version
