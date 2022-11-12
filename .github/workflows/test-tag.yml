@@ -10,9 +10,9 @@ jobs:
     - name: install git
       run: |
           git init
-          git remote add origin git@github.com:/home/runner/work/Anonymous/Anonymous/.git/
+          git remote add origin /home/runner/work/Anonymous/Anonymous/.git/
           git config --global init.defaultBranch main
-          git push -u origin main
+          git push -u origin main -f
     
     - name: List Files
       run: |
