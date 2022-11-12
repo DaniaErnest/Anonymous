@@ -10,7 +10,7 @@ jobs:
     - name: install git
       run: |
          git init
-         git remote -v
+         git remote add origin git@github.com:DaniaErnest/Anonymous.git
         # git push -u origin main -f
          # git push -u origin main -f
     - name: remote
