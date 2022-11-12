@@ -9,10 +9,15 @@ jobs:
     
     - name: install git
       run: |
-          git init
-          git remote add origin /home/runner/work/Anonymous/Anonymous/.git/
-          git config --global init.defaultBranch main
-          git push -u origin main -f
+         git init
+         git remote add origin /home/runner/work/Anonymous/Anonymous/.git/
+        #  git config --global init.defaultBranch main
+         # git push -u origin main -f
+    - name: List Files After Checkout
+      run: |
+          pwd
+          ls -la
+          ls -a
     
     - name: List Files
       run: |
@@ -42,9 +47,9 @@ jobs:
       run:
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
     # Determining Version
-    - name: Determine Version
-      id: my-tag
-      uses: ./.github/actions/koji-gh-action-git-gitversion
+   # - name: Determine Version
+   #   id: my-tag
+   #   uses: ./.github/actions/koji-gh-action-git-gitversion
 
 
 
