@@ -4,7 +4,6 @@ on:
   push:
 
 jobs:
-
   build-tag:
     name: Generate tag
     runs-on: ubuntu-latest
