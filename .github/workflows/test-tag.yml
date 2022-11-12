@@ -21,7 +21,7 @@ jobs:
       with:
         repository: DaniaErnest/git-tag
         token: ${{ secrets.GIT_TOKEN }}
-        path: ./.github/workflows
+        path: DaniaErnest/Anonymous
         ref: main
         fetch-depth: 0
     - name: List Files After Checkout
@@ -32,7 +32,7 @@ jobs:
     # Determining Version
     - name: Determine Version
       id: my-tag
-      uses: ./.github/workflows
+      uses: ./DaniaErnest/Anonymous
 
 
 
