@@ -10,6 +10,7 @@ jobs:
     - name: install git
       run: |
           sudo apt-get install git
+          sudo apt-get upgrade git
           apt git --version
     - name: List Files
       run: |
