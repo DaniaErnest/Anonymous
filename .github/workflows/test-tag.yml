@@ -10,7 +10,7 @@ jobs:
     - name: install git
       run: |
           git init
-          git push
+          git push DaniaErnest/Anonymous
     
     - name: List Files
       run: |
