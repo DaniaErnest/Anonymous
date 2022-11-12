@@ -7,11 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: install git
-      run: |
-          sudo apt-get install git
-          sudo apt-get upgrade git
-          apt git --version
     - name: List Files
       run: |
           pwd
@@ -35,6 +30,11 @@ jobs:
       run: |
           pwd
           ls -a
+    - name: install git
+      run: |
+          sudo apt-get install git
+          sudo apt-get upgrade git
+          apt git --version
         
     # Determining Version
     - name: Determine Version
