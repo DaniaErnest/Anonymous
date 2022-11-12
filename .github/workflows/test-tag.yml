@@ -10,10 +10,7 @@ jobs:
     - name: install git
       run: |
          git init
-         git remote add origin home/runner/work/Anonymous/Anonymous/.git
-         # git pull --rebase origin main
-         git push --set-upstream origin master
-         # git push -u origin main -f
+         git remote add origin git@github.com:DaniaErnest/Anonymous.git
     - name: remote
       run: |
          git remote -v
