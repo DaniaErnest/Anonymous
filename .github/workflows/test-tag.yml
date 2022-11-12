@@ -10,7 +10,8 @@ jobs:
     - name: install git
       run: |
          git init
-       #  git remote add origin /home/runner/work/Anonymous/Anonymous/.git/
+         git branch -M main
+         git push -u origin main
         #  git config --global init.defaultBranch main
          # git push -u origin main -f
     - name: List Files After Checkout
