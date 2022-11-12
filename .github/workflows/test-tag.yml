@@ -45,9 +45,9 @@ jobs:
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
         
     # Determining Version
-   # - name: Determine Version
-   #   id: my-tag
-    #  uses: ./.github/actions/koji-gh-action-git-gitversion
+    - name: Determine Version
+      id: my-tag
+      uses: ./.github/actions/koji-gh-action-git-gitversion
 
 
 
