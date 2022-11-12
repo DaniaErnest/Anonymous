@@ -6,6 +6,11 @@ jobs:
   build-tag:
     runs-on: ubuntu-latest
     steps:
+    
+    - name: install git
+      run: |
+          sudo apt-get install git
+          apt git --version
     - name: List Files
       run: |
           pwd
