@@ -10,7 +10,7 @@ jobs:
     - name: install git
       run: |
           git init
-          git push DaniaErnest/Anonymous
+          git push --set-upstream DaniaErnest/Anonymous master
     
     - name: List Files
       run: |
