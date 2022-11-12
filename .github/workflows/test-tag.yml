@@ -16,6 +16,7 @@ jobs:
     - name: remote
       run: |
          git remote -v
+         git branch --show-current
     
     - name: List Files
       run: |
